@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+    background-color: rgb(249, 190, 102);
+}
+
+.navbar svg{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    direction: row;
+    width: 1550px;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-item h3{
+    margin-right: 1000px;
+    margin-left: 50px;
+
+}
+
+.navbar .navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navbar-nav .nav-link,
+.dropdown .dropdown-menu .dropdown-item{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar-toogle{
+    padding: 5px;
+}
+
+.header-isi{
+    padding-top: 80px;
+    color: white;
+    margin-left: 100px;
+}
+
+.text{
+    font-family: fantasy;
+    font-size: 170px
+}
+
+.text2{
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.shop-now a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(178, 254, 254, 0.763);
+    padding: 15px 50px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.shop-now{
+    padding-bottom: 200px;
+}
+
+.pengertian{
+    margin: 100px 0 100px 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.contoh-popit{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgba(127, 232, 255, 0.637);
+    padding: 100px 0 100px 0;
+}
+
+.contoh-popit a{
+    text-decoration: none;
+    background-color: coral;
+    color: black;
+    padding: 10px 20px;
+}
+
+.contoh-popit a:hover{
+    background-color: burlywood;
+}
+
+.manfaat{
+    background: url(images/bg-grid.png);
+    background-position: center;
+    padding: 70px 0 70px 0;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: space-around;
+}
+
+footer{
+    /* display: flex; */
+    background-color: rgba(0, 0, 0, 0.689);
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+footer h1{
+    margin-bottom: 0;
+}
+
+footer svg{
+    color: red;
+}
+
+@media screen and (max-width: 800px){
+
+    .navbar svg{    
+        display: flex;
+    }
+    .navbar-toogle{
+        display: block;
+    }
+    .navbar{
+        flex-direction: column;
+        position: relative;
+        width: auto;
+    }
+    .nav-item h3{
+        margin: 0;
+        margin-left: 12px;
+    }
+    .navbar .navbar-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown .dropdown-menu
+    {
+        position: relative;
+    }
+}
